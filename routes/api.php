@@ -9,3 +9,4 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 
 Route::get('/produk', [ApiController::class, 'index']);
+Route::get('/list', [ApiController::class, 'getProduct']);
